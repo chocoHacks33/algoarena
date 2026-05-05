@@ -1,6 +1,6 @@
-During our initial experimentation of Qwen 3-Max Model to generate image ad creatives for brands, we came across an issue where GenAI performed poorly in generating images where there was text in the image itself as these text tend to be jumbled up or misspelt. However, in the advertising sector, most brand visuals and advertisements include text in images. 
+During my initial experimentation of Qwen 3-Max Model to generate image ad creatives for brands, I came across an issue where GenAI performed poorly in generating images where there was text in the image itself as these text tend to be jumbled up or misspelt. However, in the advertising sector, most brand visuals and advertisements include text in images. 
 
-We thought of a workflow or pipeline that could help to fix this issue.
+I thought of a workflow or pipeline that could help to fix this issue.
 Step 1: The creative director of the company would input the detailed prompt to Qwen (Text to Image Model) to generate the initial iteration of the advertisement. (Figure 1)
 Step 2: Now, this creative director could simply go through an eyeball check to see if the text in the image is spelt correctly and is not jumbled up. However, we made it more feasible with less human involvement to automate the whole process especially when mass producing advertisements. The creative director could instead upload the advertisement initially produced in Step 1 to Qwen Text+Image to Text Model and prompt it to find all words in the exact spellings as in the image. Essentially this can be any OCR (Optical Character Recognition) technology. However, we kept to Qwen to stay in the same ecosystem. (Figure 2) 
 
