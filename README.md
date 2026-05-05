@@ -8,7 +8,15 @@ Step 3: We now take the words provided in Step 2 to Qwen Text to Text Model and 
 
 Step 4: However, if we the words are misspelt and which ones are, we can pass in the initial advertisement generated in Step 1 to Qwen Image Edit Model and prompt it to change those respective words that are misspelt in the image (obtained from Step 3) and output the regenerated edited image. Now Step 4 will provide iteration 2 of the advertisement. (Figure 5)
 
-However we cannot guarantee that Step 4 will once again produce an advertisement with corrected text in image. Hence, the pipeline only ends once we run through Step 2 and 3 again with the Iteration 2 ad-creative (Figure 6) and Qwen informs us that there are no misspellings. If there once again is, we continue Step 4 for Iteration 3. This process repeats and this entirety encapsulates the workflow (Figure 7) to avoid misspelt text in image when generating advertisements. Based on internal tests, the workflow lowered the average rate of misspelt text in ads from approximately 30% to under 5% across 50 test samples, while maintaining visual fidelity.
+However we cannot guarantee that Step 4 will once again produce an advertisement with corrected text in image. Hence, the pipeline only ends once we run through Step 2 and 3 again with the Iteration 2 ad-creative (Figure 6) and Qwen informs us that there are no misspellings. If there once again is, we continue Step 4 for Iteration 3. This process repeats and this entirety encapsulates the workflow to avoid misspelt text in image when generating advertisements. Based on internal tests, the workflow lowered the average rate of misspelt text in ads from approximately 30% to under 5% across 50 test samples, while maintaining visual fidelity.
 
 We managed to solve a real issue to Image in text being jumbled on misspelt and this 4 steps can be applicable to any image generation model.
 
+
+<img width="816" height="527" alt="Screenshot 2026-05-05 081929" src="https://github.com/user-attachments/assets/89fa290a-4052-4fb0-9d72-50dced9624aa" />
+
+<img width="810" height="585" alt="Screenshot 2026-05-05 081945" src="https://github.com/user-attachments/assets/c8b669c1-e335-454e-9cbb-e440c17b0431" />
+
+<img width="868" height="878" alt="Screenshot 2026-05-05 081958" src="https://github.com/user-attachments/assets/18dfe9e0-3f2e-4c67-8bb9-9f8904d5249b" />
+
+<img width="863" height="856" alt="Screenshot 2026-05-05 082016" src="https://github.com/user-attachments/assets/abe27d47-c3f5-4f9c-bab2-0c50a39d8798" />
