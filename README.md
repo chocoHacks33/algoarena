@@ -10,7 +10,7 @@ Step 4: However, if we the words are misspelt and which ones are, we can pass in
 
 However we cannot guarantee that Step 4 will once again produce an advertisement with corrected text in image. Hence, the pipeline only ends once we run through Step 2 and 3 again with the Iteration 2 ad-creative (Figure 4) and Qwen informs us that there are no misspellings. If there once again is, we continue Step 4 for Iteration 3. This process repeats and this entirety encapsulates the workflow to avoid misspelt text in image when generating advertisements. Based on internal tests, the workflow lowered the average rate of misspelt text in ads from approximately 30% to under 5% across 50 test samples, while maintaining visual fidelity.
 
-We managed to solve a real issue to Image in text being jumbled on misspelt and this 4 steps can be applicable to any image generation model.
+We managed to solve a real issue where Image in text is jumbled or misspelt and this 4 steps can be applicable to any image generation model. 
 
 
 Figure 1
